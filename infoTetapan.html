@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel     ="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> <!-- bootstrap -->
+	<script src   ="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src   ="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="css/cssutama.css" />
+	<link rel="stylesheet" href="css/sweetalert.css">
+	<title>Menu</title>
+</head>
+<body>
+	<div id="wrapper">
+			<div class="overlay"></div>
+
+			<!-- Sidebar -->
+			<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+					<ul class="nav sidebar-nav">
+							<li class="sidebar-brand">
+									<a>
+										 <strong>C S R S</strong>
+									</a>
+							</li>
+							<li>
+									<a href="menuUtama.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Menu Utama</a>
+							</li>
+							<li>
+									<a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Info Tetapan</a>
+							</li>
+							<li>
+									<a href="daftarKolej.html"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Daftar Masuk Kolej</a>
+							</li>
+							<li>
+									<a href="aduan.html"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Aduan</a>
+							</li>
+							<li>
+									<a href="#"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Daftar Keluar Kolej</a>
+							</li>
+							<li>
+									<a href="#"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout</a>
+							</li>
+					</ul>
+			</nav>
+			<!-- /#sidebar-wrapper -->
+
+			<!-- Page Content -->
+			<div id="page-content-wrapper">
+					<button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+							<span class="hamb-top"></span>
+				<span class="hamb-middle"></span>
+			<span class="hamb-bottom"></span>
+					</button>
+					<div class="container">
+							<div class="row">
+									<div class="col-lg-8 col-lg-offset-2">
+										<header>
+											<h1 id="fittext">Info Tetapan - CSRS </br>
+                        <small>
+                          Lakukan perubahan maklumat peribadi
+                        </small>
+                      </h1>
+										</header>
+					<fieldset class="for-panel">
+          <legend>Maklumat Pengguna</legend>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-horizontal">
+                  <label class="col-xs-5 control-label">Student Name:</label>
+                  <p class="form-control-static">Ronny Wibowo</p>
+                  <label class="col-xs-5 control-label">Phone Number: </label>
+                  <p class="form-control-static">988-630-6659</p>
+                    <label class="col-xs-5 control-label">E-mail: </label>
+                    <p class="form-control-static">@gmail.com</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-horizontal">
+                  <label class="col-xs-4 control-label">Matrik: </label>
+                  <p class="form-control-static">B031410108</p>
+                  <label class="col-xs-4 control-label">I/C: </label>
+                  <p class="form-control-static">920101101010</p>
+                  <label class="col-xs-4 control-label">Kediaman: </label>
+                  <p class="form-control-static"><b>AJ</b>, B-4-1-B</p>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+										<form method="post" action="#">
+                   <div class="form-group ">
+                    <label class="control-label " for="name">
+                     Full Name :
+                    </label>
+                    <div class="input-group">
+                     <div class="input-group-addon">
+                      <i class="glyphicon glyphicon-console">
+                      </i>
+                     </div>
+                     <input class="form-control" id="name" name="name" type="text"/>
+                    </div>
+                   </div>
+                   <div class="form-group ">
+                    <label class="control-label requiredField" for="email">
+                     Email :
+                     <span class="asteriskField">
+                      *
+                     </span>
+                    </label>
+                    <div class="input-group">
+                     <div class="input-group-addon">
+                      <i class="glyphicon glyphicon-envelope">
+                      </i>
+                     </div>
+                     <input class="form-control" id="email" name="email" type="text"/>
+                    </div>
+                    <span class="help-block">
+                     Please put your email so that the system can send its
+              			 <a data-toggle="tooltip" data-placement="right" title="We will send QR Code to your email"><strong>code</strong></a>
+                    </span>
+                   </div>
+
+              		 <div class="form-group ">
+              			<label class="control-label " for="password">
+              			 Password :
+              			</label>
+              			<div class="input-group">
+              			 <div class="input-group-addon">
+              				<i class="glyphicon glyphicon-lock">
+              				</i>
+              			 </div>
+              			 <input class="form-control" id="password" name="password" type="password"/>
+              			</div>
+              		 </div>
+
+                   <div class="form-group ">
+                    <label class="control-label " for="identificationNumber">
+                     Identification Number :
+                    </label>
+                    <div class="input-group">
+                     <div class="input-group-addon">
+                      <i class="glyphicon glyphicon-flag">
+                      </i>
+                     </div>
+                     <input class="form-control" id="identificationNumber" name="identificationNumber" type="text"/>
+                    </div>
+                   </div>
+                   <div class="form-group ">
+                    <label class="control-label " for="name1">
+                     Student ID :
+                    </label>
+                    <div class="input-group">
+                     <div class="input-group-addon">
+                      <i class="glyphicon glyphicon-credit-card">
+                      </i>
+                     </div>
+                     <input class="form-control" id="name1" name="name1" type="text"/>
+                    </div>
+                   </div>
+                   <div class="form-group ">
+                    <label class="control-label " for="name2">
+                     Contact Number :
+                    </label>
+                    <div class="input-group">
+                     <div class="input-group-addon">
+                      <i class="glyphicon glyphicon-earphone">
+                      </i>
+                     </div>
+                     <input class="form-control" id="name2" name="name2" type="text"/>
+                    </div>
+                   </div>
+                   <div class="form-group">
+                    <div>
+                     <button class="btn btn-primary" name="submit" type="submit"><i class="glyphicon glyphicon-ok-sign"></i>
+                      Update
+                     </button>
+                    </div>
+                   </div>
+                  </form>
+									</div>
+              </div>
+					</div>
+			</div><!-- /#page-content-wrapper -->
+	</div>
+</div><!-- /#wrapper -->
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+      $('[data-toggle="tooltip"]').tooltip();
+
+		  fitText(document.getElementById('fittext'), 1.2);
+
+			swal({
+				title: "Congrats!",
+				text: "Message alert paling keren udah berjaya installasi",
+				type: "success",
+				confirmButtonText: "Keren" });
+});
+
+</script>
+<script src="js/skrip.js"></script>
+<script src="js/sweetalert-dev.js"></script>
+<script src="js/fittext.js"></script>
+</body>
+</html>
